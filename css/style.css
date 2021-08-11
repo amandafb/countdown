@@ -1,0 +1,113 @@
+:root {
+    --darkBlue: #343650;
+    --veryDarkBlue: #1d1c25;
+    --veryDarkBlueTransparent: #1d1c2526;
+    --grayBlue: #8486a9;
+    --softRed: #fb6087;
+    --almostBlack: #0c0c114b;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+.main {
+    background-color: var(--veryDarkBlue);
+    background-image: url('../images/bg-stars.svg');
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 8px;
+    text-shadow: whitesmoke .5px .5px;
+    margin-bottom: 50px;
+}
+
+.countdown {
+    display: flex;
+}
+
+.countdown_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.countdown_info h2 {
+    color: var(--grayBlue);
+    text-transform: uppercase;
+    font-size: .7rem;
+    letter-spacing: 4px;
+}
+
+.countdown_numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+    background-color: var(--darkBlue);
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: var(--softRed);
+    border-radius: 8px;
+    box-shadow: 0 8px 2px var(--almostBlack);
+    position: relative;
+}
+
+.countdown_numbers::before{
+    content: '';
+    width: 4px;
+    height: 7px;
+    border-top-right-radius: 50px ;
+    border-bottom-right-radius: 50px ;
+    background-color: var(--veryDarkBlue);
+    position: absolute;
+    left: 0
+}
+
+.countdown_numbers::after{
+    content: '';
+    width: 4px;
+    height: 7px;
+    border-top-left-radius: 50px ;
+    border-bottom-left-radius: 50px ;
+    background-color: var(--veryDarkBlue);
+    position: absolute;
+    right: 0;
+}
+
+.line{
+    background-color:var(--veryDarkBlueTransparent);
+    width: 120px;
+    height: 2px;
+    position: absolute;
+    top:79px ;
+    z-index: 0;
+}
+.footer {
+    background-color: var(--veryDarkBlue);
+    background-image: url('../images/pattern-hills.svg');
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer img {
+    margin: 0 20px 0;
+}

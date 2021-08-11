@@ -33,6 +33,6 @@ function countdown(date){
       }
 }
 
-// setInterval(() => {
-//   countdown("31 December 2021 23:59:59");
-// }, 1000)
+setInterval(() => {
+  countdown("31 December 2021 23:59:59");
+}, 1000)
