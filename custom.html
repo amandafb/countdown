@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown - Personalizado</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://kit.fontawesome.com/0dd9c8a85f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+            <a href="index.html">Ano Novo</a>
+            <a href="custom.html">Personalizado</a>
+    </nav>
+    <main class="main">
+        <section class="custom-info"> 
+            <div>
+                <label for="titleImput">Nome do Evento</label>
+                <input type="text" name="titleImput" id="titleImput">
+            </div>  
+            <div>
+                <label for="dayInput">Dia</label>
+                <input type="number" name="dayInput" id="dayInput" min="1" max="31">
+            </div>
+            <div>
+                <label for="monthInput">Mês</label>
+                <select name="monthInput" id="monthInput">
+                    <option value="0">Mês</option>
+                    <option value="January">Janeiro</option>
+                    <option value="February">Fevereiro</option>
+                    <option value="March">Março</option>
+                    <option value="April">Abril</option>
+                    <option value="May">Maio</option>
+                    <option value="June">Junho</option>
+                    <option value="July">Julho</option>
+                    <option value="August">Agosto</option>
+                    <option value="September">Setembro</option>
+                    <option value="October">Outubro</option>
+                    <option value="November">Novembro</option>
+                    <option value="December">Dezembro</option>
+                </select>
+            </div>
+            <div>
+                <label for="yearInput">Ano</label>
+                <input type="number" name="yearInput" id="yearInput" min="0">
+            </div>
+            <button id="btnEnviar">Iniciar</button>
+            <button type="submit" id="btnReset">Limpar</button>
+            <div class="error">
+                <span class="messageError">Por favor preencha todos os campos e insira uma data maior que a atual</span> <span class="closeError">x</span>
+            </div>
+        </section>
+       
+        
+
+
+        <h1 class="title">2022</h1>
+        <section class="countdown">
+            <div class="countdown_info">
+                <span id="numberOfDays" class="countdown_numbers">00</span>
+                <div class="line"></div>
+                <h2>Dias</h2>
+            </div>
+            <div class="countdown_info">
+                <span id="numberOfHours" class="countdown_numbers">00</span>
+                <div class="line"></div>
+                <h2>Horas</h2>
+            </div>
+            <div class="countdown_info">
+                <span id="numberOfMinutes" class="countdown_numbers">00</span>
+                <div class="line"></div>
+                <h2>Minutos</h2>
+            </div>
+            <div class="countdown_info">
+                <span id="numberOfSeconds" class="countdown_numbers">00</span>
+                <div class="line"></div>
+                <h2>Segundos</h2>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <a href=""><i class="fab fa-facebook-square"></i></a>
+        <a href=""><i class="fab fa-pinterest"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+    </footer>
+
+  
+    <script type="module" src="js/custom.js"></script>
+</body>
+
+</html>
